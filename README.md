@@ -1,2 +1,2 @@
-# GOT_video
-Update this with a proper readme doc
+# Game of Thrones Video Lightbox 
+Working with JS, CSS and HTML to create lightboxes with video content.
