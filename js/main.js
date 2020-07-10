@@ -3,17 +3,25 @@
 
     let lightBox = document.querySelector('.lightbox'),
         lbClose = lightBox.querySelector('span'),
+        lbVideo = lightBox.querySelector('video'),
         sigils = document.querySelectorAll('.sigilContainer');
 
-    function showLightBox() {
-        lightBox.classList.add('show-lightbox');
+    function showHideLightBox() {
+        lightBox.classList.toggle('show-lightbox');
+
+        if (lbVideo.paused) {
+            lbVideo.play();
+        } else {
+            lbVideo.currentTime = 0;
+            lbVideo.pause();
+        }
+        //rewind the video and make it pause at current time of 0
+
     }
 
-    function hideLightBox() {
-        lightBox.classList.remove('show-lightbox');
-    }
+    sigils.forEach(sigil => sigil.addEventListener('click', showHideLightBox));
+    lbClose.addEventListener('click', showHideLightBox);
 
-    sigils.forEach(sigil => sigil.addEventListener('click', showLightBox));
-    lbClose.addEventListener('click', hideLightBox);
+    lbVideo.addEventListener('ended', showHideLightBox)
 
 })();
