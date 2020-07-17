@@ -62,7 +62,7 @@ main {
 
 #houseImages {
     position: relative;
-    width: 4000px;
+    width: 7000px;
     /*this might need to be bigger*/
     transition: all .5s;
 }
