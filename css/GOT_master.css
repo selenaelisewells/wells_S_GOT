@@ -9,6 +9,21 @@
     font-style: normal;
 }
 
+.fas {
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+.house-info {
+    color: white;
+    width: 70%;
+    font-size: 1.25em;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
 
 /* ----- end custom font ----- */
 
@@ -42,12 +57,13 @@ main {
     height: 360px;
     background-color: grey;
     margin: 0 auto;
-    /*overflow:hidden;*/
+    overflow: hidden;
 }
 
 #houseImages {
     position: relative;
     width: 4000px;
+    /*this might need to be bigger*/
     transition: all .5s;
 }
 
