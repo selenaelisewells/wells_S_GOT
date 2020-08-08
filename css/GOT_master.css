@@ -225,3 +225,23 @@ video {
 .show-lightbox {
     display: block;
 }
+
+
+/* controls */
+
+.controls {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 20px;
+}
+
+.fas:hover {
+    color: #949393;
+}
